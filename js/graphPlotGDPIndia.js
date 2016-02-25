@@ -40,7 +40,7 @@ var init = function(){
     .attr('class', 'd3-tip')
     .offset([-10, 0])
     .html(function(d) {
-      return "<strong style='color:blue'>GDP:</strong> <span style='color:blue'>" + d.gdp + "</span>";
+      return "<strong style='color:blue' </strong>"+d.year+"<span style='color:blue'> : " + d.gdp + "</span>";
     })
 }
 init();
