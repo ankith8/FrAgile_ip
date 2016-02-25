@@ -30,16 +30,18 @@ $(document).ready(function () {
         {
             $this.children('i').removeClass('glyphicon-resize-small');
             $this.children('i').addClass('glyphicon-resize-full');
+
         }
         $(this).closest('.panel').toggleClass('panel-fullscreen');
+        toggleWindow();
     });
 });
 
-$( window ).resize(function() {
-  removeGraph();
-  init();
-  dispGrph();
-});
+// $( window ).resize(function() {
+//   removeGraph();
+//   init();
+//   dispGrph();
+// });
 
 function toggleWindow() {
   removeGraph();
