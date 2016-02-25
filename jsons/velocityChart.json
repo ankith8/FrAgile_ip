@@ -1,0 +1,17 @@
+[
+  {
+    "sprint":1,
+    "tot_stories":20,
+    "completed_stories":15
+  },
+  {
+    "sprint":2,
+    "tot_stories":15,
+    "completed_stories":15
+  },
+  {
+    "sprint":3,
+    "tot_stories":20,
+    "completed_stories":20
+  }
+]

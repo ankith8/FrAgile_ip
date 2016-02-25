@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Dashboard</title>
+		<meta name="description" content="">
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Bootstrap CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="../css/styles.css" rel="stylesheet">
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script>
+	</head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <!-- //Toggle navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <!-- <li><a href="#">Export</a></li> -->
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Velocity Chart</a></li>
+            <li><a href="">Sprint Chart</a></li>
+            <li><a href="">Cumulative Flow Diagram</a></li>
+            <li><a href="">Version Report</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="col-sm-6">
+  					<div class="panel WH">
+  						<div class="panel-heading">
+  							<h3 class="panel-title">Velocity Chart</h3>
+                <ul class="list-inline panel-actions">
+                  <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>
+                </ul>
+              </div><!-- end panel-heading -->
+              <div class="panel-body">
+                <div class="gbox">
+                  <script src="../js/graphPlotGDPIndia.js"></script>
+                </div>
+              </div>
+  					</div><!-- end panel -->
+  				</div><!-- end feature -->
+
+  				<div class="col-sm-6">
+  					<div class="panel WH"><!-- onclick="getWH()"-->
+  						<div class="panel-heading">
+  							<h3 class="panel-title">Sprint Chart</h3>
+              </div><!-- end panel-heading -->
+                <div class="gbox">
+
+                </div>
+  					</div><!-- end panel -->
+  				</div><!-- end feature -->
+
+
+          <div class="col-sm-6">
+            <div class="panel">
+              <div class="panel-heading">
+                <h3 class="panel-title">Cumulative Flow Diagram</h3>
+              </div><!-- end panel-heading -->
+                <div class="gbox">
+
+                </div>
+            </div><!-- end panel -->
+          </div><!-- end feature -->
+
+          <div class="col-sm-6">
+            <div class="panel">
+              <div class="panel-heading">
+                <h3 class="panel-title">Version Report </h3>
+              </div><!-- end panel-heading -->
+                <div class="gbox">
+
+                </div>
+            </div><!-- end panel -->
+          </div><!-- end feature -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- First try for the online version of jQuery-->
+    <!-- <script src="http://code.jquery.com/jquery.js"></script> -->
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <!-- <script>window.jQuery || document.write('<script src="../js/jquery-1.8.2.min.js"><\/script>')</script> -->
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+    <script src="../js/script.js"></script>
+  </body>
