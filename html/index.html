@@ -126,9 +126,9 @@
 					<div class="col-sm-12">
 						<div class="panel">
 							<div class="panel-heading">
-								<h3 class="panel-title">Release Chart </h3>
+								<h2 class="panel-title"><strong>Release Chart</strong> </h2><br>
 
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Status
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
@@ -136,7 +136,7 @@
                     <li><a href="#">UnReleased</a></li>
                     <li><a href="#">Both</a></li>
                   </ul>
-                </div>
+                </div> -->
 
                 <!-- <div class="row">
                   <div class="col-lg-4">
@@ -146,13 +146,75 @@
                         <button class="btn btn-default" type="button">Go!</button>
                       </span>
                     </div> /input-group
-                  </div> /.col-lg-6 
+                  </div> /.col-lg-6
                 </div> -->
 
+								<table class="table table-striped">
+					        <thead>
+					          <tr>
+					            <th>Version</th>
+					            <th>Status</th>
+					            <th>Progress</th>
+					            <th>Start Date</th>
+					            <th>Release Date</th>
+					            <th>Description</th>
+					          </tr>
+					        </thead>
+					        <tbody>
+					          <tr>
+					            <td>1.0</td>
+					            <td>Release</td>
+					            <td>
+					              <div class="progress">
+					                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+					                  80%
+					                </div>
+					                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+					                  20%
+					                </div>
+					              </div>
+					            </td>
+					            <td>Jan 10 2015</td>
+					            <td>Jan 10 2016</td>
+					            <td>Version 1.0 project data</td>
+					          </tr>
+
+					          <tr>
+					            <td>2.0</td>
+					            <td>UnRelease</td>
+					            <td>
+					              <div class="progress">
+					                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+					                  60%
+					                </div>
+					                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%</td>
+					                  <td>Feb 10 2015</td>
+					                  <td>Feb 10 2016</td>
+					                  <td>Version 2.0 project data</td>
+					                </tr>
+
+					                <tr>
+					                  <td>3.0</td>
+					                  <td>Release</td>
+					                  <td>
+					                    <div class="progress">
+					                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+					                        50%
+					                      </div>
+					                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+					                        50%
+					                      </div>
+					                    </div>
+					                  </td>
+					                  <td>Mar 10 2015</td>
+					                  <td>Mar 10 2016</td>
+					                  <td>Version 3.0 project data</td>
+					                </tr>
+					              </tbody>
+					            </table>
+
+
 							</div><!-- end panel-heading -->
-								<div class="gbox">
-					<!-- <script src="../js/graphPlotGDPIndia.js"></script> -->
-								</div>
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 
