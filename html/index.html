@@ -14,6 +14,7 @@
 		<link href="../css/styles.css" rel="stylesheet">
 
     <script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- First try for the online version of jQuery-->
     <script src="http://code.jquery.com/jquery.js"></script>
@@ -53,7 +54,7 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">Dashboard <span class="sr-only"></span></a></li>
             <li><a href="#">Reports</a></li>
             <li><a href="#">Analytics</a></li>
             <!-- <li><a href="#">Export</a></li> -->
@@ -68,29 +69,33 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6" id="gr_1">
   					<div class="panel WH">
   						<div class="panel-heading">
   							<h3 class="panel-title">Velocity Chart</h3>
                 <ul class="list-inline panel-actions">
-                  <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>
+									<button type="button" class="close" data-dismiss="panel WH" id="closeGraphWindow">&times;</button>
+                  <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full">  </i></a></li>
                 </ul>
-              </div><!-- end panel-heading -->
+              </div>
               <div class="panel-body">
                 <div class="gbox">
                   <script src="../js/graphPlotGDPIndia.js"></script>
                 </div>
               </div>
-  					</div><!-- end panel -->
-  				</div><!-- end feature -->
+  					</div>
+  				</div>
 
   				<div class="col-sm-6">
   					<div class="panel WH"><!-- onclick="getWH()"-->
   						<div class="panel-heading">
   							<h3 class="panel-title">Sprint Chart</h3>
+								<!-- <ul class="list-inline panel-actions">
+									<li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>
+								</ul> -->
               </div><!-- end panel-heading -->
                 <div class="gbox">
-
+									<!-- <script src="../js/graphPlotGDPIndia.js"></script> -->
                 </div>
   					</div><!-- end panel -->
   				</div><!-- end feature -->
@@ -102,7 +107,7 @@
                 <h3 class="panel-title">Cumulative Flow Diagram</h3>
               </div><!-- end panel-heading -->
                 <div class="gbox">
-
+<!-- <script src="../js/graphPlotGDPIndia.js"></script> -->
                 </div>
             </div><!-- end panel -->
           </div><!-- end feature -->
@@ -113,7 +118,7 @@
                 <h3 class="panel-title">Version Report </h3>
               </div><!-- end panel-heading -->
                 <div class="gbox">
-
+<!-- <script src="../js/graphPlotGDPIndia.js"></script> -->
                 </div>
             </div><!-- end panel -->
           </div><!-- end feature -->

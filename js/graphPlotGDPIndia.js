@@ -35,6 +35,13 @@ var init = function(){
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    tip = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+      return "<strong style='color:blue'>GDP:</strong> <span style='color:blue'>" + d.gdp + "</span>";
+    })
 }
 init();
 
@@ -44,6 +51,9 @@ init();
 
   var dispGrph = function(){ d3.json("../jsons/gdpIndiaData.json",
   function(error, data) {
+
+    svg.call(tip);
+
     x.domain(data.map(
       function(d) {
         return d.year;
@@ -91,7 +101,9 @@ init();
       .attr("height",
       function(d) {
         return height - y(d.gdp);
-      });
+      })
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
   });
 }
 dispGrph();

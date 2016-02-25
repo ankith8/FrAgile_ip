@@ -8,11 +8,11 @@ $(function() {
 
     $('#successAlert').slideDown();
   });
-});
 
-// function getWH(){
-//   alert("Width and Height of div: " + $(".WH").width() + "  " +$(".WH").height());
-// }
+  $('#closeGraphWindow').click(function(event) {
+    $("#gr_1").remove();
+  });
+});
 
 $(document).ready(function () {
     //Toggle fullscreen
@@ -36,12 +36,6 @@ $(document).ready(function () {
         toggleWindow();
     });
 });
-
-// $( window ).resize(function() {
-//   removeGraph();
-//   init();
-//   dispGrph();
-// });
 
 function toggleWindow() {
   removeGraph();
