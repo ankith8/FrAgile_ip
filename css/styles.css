@@ -120,6 +120,12 @@ body {
     overflow: auto;
 }
 
+ul.dropdown-menu{
+  position: relative;
+  max-width: 160px;
+  float: none;
+}
+
 
 /* --------h------------------------------
    Media Queries
