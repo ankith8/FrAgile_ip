@@ -14,6 +14,10 @@ $(function() {
   });
 });
 
+
+
+
+
 $(document).ready(function () {
     //Toggle fullscreen
     $("#panel-fullscreen").click(function (e) {
