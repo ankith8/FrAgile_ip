@@ -9,12 +9,14 @@ $(function() {
     $('#successAlert').slideDown();
   });
 
-  $('#closeGraphWindow').click(function(event) {
-    $("#gr_1").remove();
-  });
+  // $('#closeGraphWindow').click(function(event) {
+  //   $("#gr_1").remove();
+  // });
 });
 
-
+function deleteWindow(id){
+  $(id).remove();
+}
 
 
 
