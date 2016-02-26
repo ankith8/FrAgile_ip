@@ -131,3 +131,27 @@ ul.dropdown-menu{
 /* --------h------------------------------
    Media Queries
    -------------------------------------- */
+
+   .bar {
+     fill: steelblue;
+   }
+
+   .MainPage{
+     font-size: 20px;
+     list-style: none;
+   }
+   /*.bar:hover {
+     fill: black;
+   }*/
+   .axis {
+     font: 10px sans-serif;
+   }
+   .axis path,
+   .axis line {
+     fill: none;
+     stroke: #000;
+     shape-rendering: crispEdges;
+   }
+   .x.axis path {
+     display: none;
+   }

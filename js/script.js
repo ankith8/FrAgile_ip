@@ -48,3 +48,8 @@ function toggleWindow() {
   init();
   dispGrph();
 }
+
+// function createGraph(jobj){
+//   var graphName = jobj('');
+//   $(".main").append("")
+// }
